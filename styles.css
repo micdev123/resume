@@ -177,14 +177,7 @@ a {
     margin-right: 10px;
 }
 
-.more {
-    width: 100%;
-    margin-top: 2rem;
-    text-align: center;
-    color: #415c89;
-    font-weight: 550;
-    font-size: 0.9rem;
-}
+
 
 .small_screen {
     display: none;
