@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+body {
+    width: 90%;
+    margin: 10px auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #414040;
+}
+
+a {
+    text-decoration: none;
+    color: #414040;
+}
+
+.dev_name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dev_name h1 {
+    font-size: 3rem;
+    color: #415c89;
+}
+
+.download {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.download img {
+    width: 1rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 5px;
+}
+.download p {
+    font-size: 0.9rem;
+}
+
+.dev_role h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    
+}
+
+.dev_contact {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+
+.image {
+    width: 1.2rem;
+    object-fit: cover;
+    margin-right: 5px;
+}
+
+.professional_summary {
+    margin-top: 10px;
+}
+
+.professional_summary p {
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+#main {
+    width: 100%;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+
+.left_side {
+    width: 100%;
+    /* border-right: 1px solid black; */
+}
+
+.skills > h2, .education > h2, .hobbies > h2, .projects > h2, .small_screen > h2 {
+    color: #415c89;
+    font-size: 1.15rem;
+}
+
+.skills_container, .education_container, .project_container {
+    margin-top: 10px;
+}
+
+.skills_container h2, .education_container h2, .project_container h2 {
+    font-size: 0.95rem;
+    font-weight: 550;
+    margin-bottom: 5px;
+}
+
+.skills_container p, .education_container p, .hobbies p {
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+.languages, .frameworks, .databases, .tools, .others {
+    margin-bottom: 10px;
+}
+
+.education, .hobbies, .small_screen {
+    margin-top: 30px;
+}
+
+.education_container p:first-of-type {
+    margin-bottom: 7px;
+    font-size: 0.8rem;
+}
+
+
+.right_side {
+    width: 100%;
+}
+
+
+/* .project {
+    margin-bottom: 10px;
+} */
+
+.project p {
+    display: flex;
+    align-items: baseline;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    font-weight: lighter;
+}
+
+.arrow {
+    width: 10px;
+    margin: 0 10px;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.live_link img, .github_link img {
+    width: 1.2rem;
+    object-fit: cover;
+}
+
+.live_link {
+    margin-right: 10px;
+}
+
+.more {
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+    color: #415c89;
+    font-weight: 550;
+    font-size: 0.9rem;
+}
+
+.small_screen {
+    display: none;
+}
+
+.small_screen_container {
+    margin-top: 4rem;
+}
+
+/* Tablet Devices :: Media Queries */
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+    #main {
+        grid-template-columns: 1fr;
+    }
+
+    .education, .hobbies {
+        display: none;
+    }
+
+    .small_screen {
+        display: block;
+    }
+}
+
+
+/* Mobile Devices :: Media Queries */
+@media screen and (max-width : 968px) and (orientation: landscape) {
+    body {
+        width: 90%;
+    }
+
+    .education,
+    .hobbies {
+        display: none;
+    }
+
+    .small_screen {
+        display: block;
+    }
+}
+
+/* Mobile Devices :: Media Queries */
+@media screen and (min-width : 320px) and (max-width : 480px) {
+    body {
+        width: 90%;
+    }
+    .dev_name {
+        align-items: flex-end;
+        margin-bottom: 10px;
+    }
+    .dev_name h1 {
+        font-size: 2rem;
+    }
+
+    .dev_role {
+        margin-bottom: 15px;
+    }
+
+    .professional_summary p {
+        line-height: 1.5rem;
+    }
+
+    #main {
+        grid-template-columns: 1fr;
+    }
+
+    .education,
+    .hobbies {
+        display: none;
+    }
+
+    .small_screen {
+        display: block;
+    } 
+
+    .skills_container p,
+    .education_container p,
+    .hobbies p, .project p {
+        line-height: 1.5rem;
+    }
+         
+}
