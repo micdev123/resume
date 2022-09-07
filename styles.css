@@ -6,8 +6,8 @@
 }
 
 body {
-    width: 90%;
-    margin: 10px auto;
+    width: 80%;
+    margin: 30px auto;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #414040;
 }
@@ -23,7 +23,7 @@ a {
 }
 
 .dev_name h1 {
-    font-size: 2.8rem;
+    font-size: 3.5rem;
     color: #415c89;
 }
 
@@ -45,7 +45,7 @@ a {
 }
 
 .dev_role h2 {
-    font-size: 1.35rem;
+    font-size: 1.4rem;
     font-weight: 500;
     margin-bottom: 10px;
     
@@ -67,7 +67,7 @@ a {
 }
 
 .contact p {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     font-weight: lighter;
 }
 
@@ -83,9 +83,9 @@ a {
 }
 
 .professional_summary p {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     font-weight: lighter;
-    /* line-height: 1.5rem; */
+    line-height: 1.5rem;
 }
 
 #main {
@@ -105,7 +105,7 @@ a {
 
 .skills > h2, .education > h2, .hobbies > h2, .projects > h2, .small_screen > h2 {
     color: #415c89;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
 }
 
 .skills_container, .education_container, .project_container {
@@ -113,15 +113,15 @@ a {
 }
 
 .skills_container h2, .education_container h2, .project_container h2 {
-    font-size: 0.9rem;
+    font-size: 1.08rem;
     font-weight: 550;
     margin-bottom: 5px;
 }
 
 .skills_container p, .education_container p, .hobbies p {
-    font-size: 0.8rem;
+    font-size: 0.92rem;
     font-weight: lighter;
-    /* line-height: 1.4rem; */
+    line-height: 1.4rem;
 }
 
 .languages, .frameworks, .databases, .tools, .others {
@@ -150,7 +150,7 @@ a {
 .project p {
     display: flex;
     align-items: baseline;
-    font-size: 0.8rem;
+    font-size: 0.92rem;
     margin-bottom: 5px;
     font-weight: lighter;
 }
