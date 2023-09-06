@@ -103,16 +103,16 @@ a {
     /* border-right: 1px solid black; */
 }
 
-.skills > h2, .education > h2, .hobbies > h2, .projects > h2, .small_screen > h2 {
+.skills > h2, .education > h2, .hobbies > h2, .projects > h2, .small_screen > h2, .histories > h2 {
     color: #415c89;
     font-size: 1.25rem;
 }
 
-.skills_container, .education_container, .project_container {
+.skills_container, .education_container, .project_container, .histories_container {
     margin-top: 10px;
 }
 
-.skills_container h2, .education_container h2, .project_container h2 {
+.skills_container h2, .education_container h2, .project_container h2, .histories_container h2 {
     font-size: 1.08rem;
     font-weight: 550;
     margin-bottom: 5px;
@@ -142,12 +142,28 @@ a {
     width: 100%;
 }
 
+.history {
+    margin-bottom: 10px;
+}
+
+.duration {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.job_content {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+
+
 
 /* .project {
     margin-bottom: 10px;
 } */
 
-.project p {
+.project p, .job_content p {
     display: flex;
     align-items: baseline;
     font-size: 0.92rem;
